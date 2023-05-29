@@ -39,5 +39,11 @@ public class CardTrick {
         } else {
             System.out.println("Sorry, your card is not in the magic hand.");
         }
-    }
+    // Add the hardcoded luckyCard
+        Card luckyCard = new Card();
+        luckyCard.setValue(7);
+        luckyCard.setSuit("Diamonds");
+
+        System.out.println("The lucky card is: " + luckyCard.getSuit() + " " + luckyCard.getValue());
+ }
 }
